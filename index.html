@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Chat</title>
+    <!-- Load Agora RTM SDK first -->
+    <script src="agora-rtm-sdk-1.4.4.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+    <div id="videos">
+        <video class="video-player" id="user-1" autoplay playinline></video>
+        <video class="video-player" id="user-2" autoplay playinline></video>
+    </div>
+
+    <div id="controls">
+        <div class="control-container" id="camera_btn" >
+            <i class="fa-solid fa-camera" style="color: rgb(179,102,259);"></i>  
+        </div>          
+        <div class="control-container" id="volume_btn">
+            <i class="fa-solid fa-microphone" style="color: rgb(179,102,259);"></i>            
+        </div>
+
+        <a href="lobby.html">
+            <div class="control-container" id="leave_btn">
+                <i class="fa-solid fa-phone" style="color: red;"></i>        
+            </div>
+        </a>
+    </div>
+    <!-- Your JavaScript logic -->
+    <script src="main.js" defer></script>
+</body>
+</html>
